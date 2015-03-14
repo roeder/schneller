@@ -42,7 +42,7 @@ This data frame contains 10299 records and 563 variables (`subject_id`,
 We want to proceed only using the variables containing mean values or standard
 deviation values. The dataset includes a file named `features.txt`, which lists
 the 561 measurement variable names. We read in those variable names and assign
-them to the corresponding columns of `complete_data`:
+them to the corresponding column names of `complete_data`:
 
 ```r
 feature_labels <- read.table('data/features.txt', stringsAsFactors = F)[, 2]
@@ -58,8 +58,8 @@ the indices of these columns:
 mean_columns <- grep('mean()', names(complete_data), fixed = T)
 std_columns <- grep('std()', names(complete_data), fixed = T)
 ```
-
-We concatenate the indices (also including `1` and `2` for `subject_id` and 
+This identifies 33 variables containing `mean()` and 33 variables containing `std()`.
+We concatenate their indices (also including `1` and `2` for `subject_id` and 
 `activity_id`) and sort them. Sorting keeps the mean and standard deviation columns 
 of one measurement next to each other, which is beneficial for inspecting the
 data set.
@@ -68,7 +68,7 @@ data set.
 relevant_columns <- sort(c(1, 2, mean_columns, std_columns))
 ```
 
-We can then extract the relevant columns.
+We can then extract the 68 relevant columns.
 
 ```r
 relevant_data <- complete_data[, relevant_columns]
