@@ -23,7 +23,7 @@ mean_columns <- grep('mean()', names(complete_data), fixed = T)
 std_columns <- grep('std()', names(complete_data), fixed = T)
 relevant_columns <- sort(c(1, 2, mean_columns, std_columns))
 
-# Keep only the relevant coumns
+# Keep only the relevant columns
 relevant_data <- complete_data[, relevant_columns]
 
 # Read in activity labels and add them to the data frame
