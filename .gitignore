@@ -1,5 +1,6 @@
 .Rproj.user
 .Rhistory
 .RData
-data/**
+data/test/**
+data/train/**
 README.html
