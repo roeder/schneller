@@ -35,3 +35,4 @@ relevant_data <- merge(relevant_data, activity_labels)[, -1]
 report_data <- aggregate(. ~ subject_id + activity, data = relevant_data, 
                          FUN = mean)
 
+write.table(report_data, 'tidy_wide.txt', row.names = F)
