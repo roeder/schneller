@@ -74,4 +74,47 @@ We can then extract the 68 relevant columns.
 relevant_data <- complete_data[, relevant_columns]
 ```
 
+## 3. Descriptive activity names
 
+The data set includes a file named `activity_labels.txt`. It contains a table 
+mapping the six activity IDs to a string describing each activity. We read it 
+into R with column names `activity_id` and `activity`:
+
+```r
+activity_labels <- read.table('data/activity_labels.txt', stringsAsFactors = F,
+                              col.names = c('activity_id', 'activity'))
+```
+
+Merging our data set `relevant_data` with this data frame `activity_labels` 
+effectively adds a column named `activity` to the data set. The `activity_id` 
+column is now redundant, we remove it with `[, -1]`:
+
+```r
+relevant_data <- merge(relevant_data, activity_labels)[, -1]
+```
+
+## 4. Descriptive variable names
+
+Lorem ipsum
+
+## 5. Aggregated tidy data
+
+We calculate the mean value of each variable for each subject and each activity
+using the base R function `aggregate()`.
+
+```r
+report_data <- aggregate(. ~ subject_id + activity, data = relevant_data, 
+                         FUN = mean)
+```
+
+This data frame is written to a text file (`'tidy_wide.txt'`):
+
+```r
+write.table(report_data, 'tidy_wide.txt', row.names = F)
+```
+
+It can be loaded into R using `read.table()` with `header = T`:
+
+```r
+d <- read.table('tidy_wide.txt', header = T)
+```
