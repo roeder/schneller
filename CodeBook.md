@@ -41,7 +41,7 @@ This applies to all measurement variable names.
     
 ### Measurement variables
 
-All variables contain **numeric** values representing the **aggregated mean for each
+All measurement variables contain **numeric** values representing the **aggregated mean for each
 test subject and activity**. Some variables correspond to 3-axial signals, their
 names are appended with an additional suffix indicating the direction (e.g. `_X`).
 For a description of the individual signals, please consult the original info file 
