@@ -1,5 +1,11 @@
 ## 1. Reading in and merging data
 
+The data set for this course project was downloaded 
+([link here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip))
+and unzipped manually. The directory `UCI HAR Dataset` was renamed `data` and 
+moved to the working directory. It contains four text files and two subdirectories,
+`train` and `test`.
+
 We start out by reading in all three training set files in the directory `data/train`.
 Column names are provided for the files `y_train.txt` and `subject_train.txt`
 via the `col.names` argument:
@@ -40,7 +46,7 @@ This data frame contains 10299 records and 563 variables (`subject_id`,
 ## 2. Extract mean and s.d. measurements
 
 We want to proceed only using the variables containing mean values or standard
-deviation values. The dataset includes a file named `features.txt`, which lists
+deviation values. The data set includes a file named `features.txt`, which lists
 the 561 measurement variable names. We read in those variable names and assign
 them to the corresponding column names of `complete_data`:
 
@@ -110,7 +116,9 @@ names(relevant_data) <- gsub('-', '_', names(relevant_data), fixed = T)
 ```
 
 This results in reasonably clean variable names without abandoning the original
-naming scheme. The variables are described in more detail in the codebook.
+naming scheme. The variables are described in more detail in the codebook 
+([link here](https://github.com/roeder/schneller/blob/master/CodeBook.md)).
+
 ## 5. Aggregated tidy data
 
 We calculate the mean value of each variable for each subject and each activity
