@@ -95,8 +95,22 @@ relevant_data <- merge(relevant_data, activity_labels)[, -1]
 
 ## 4. Descriptive variable names
 
-Lorem ipsum
+Before aggregating and reporting a tidy data set, we modify the variable (column)
+names slightly. First, we delete all `()` substrings from the column names:
 
+```r
+names(relevant_data) <- gsub('()', '', names(relevant_data), fixed = T)
+```
+
+Furthermore, we replace hyphen characters (`-`) with
+underscores (`_`):
+
+```r
+names(relevant_data) <- gsub('-', '_', names(relevant_data), fixed = T)
+```
+
+This results in reasonably clean variable names without abandoning the original
+naming scheme. The variables are described in more detail in the codebook.
 ## 5. Aggregated tidy data
 
 We calculate the mean value of each variable for each subject and each activity
