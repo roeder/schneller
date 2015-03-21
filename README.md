@@ -60,15 +60,15 @@ std_columns <- grep('std()', names(complete_data), fixed = T)
 ```
 This identifies 33 variables containing `mean()` and 33 variables containing `std()`.
 We concatenate their indices (also including `1` and `2` for `subject_id` and 
-`activity_id`) and sort them. Sorting keeps the mean and standard deviation columns 
-of one measurement next to each other, which is beneficial for inspecting the
-data set.
+`activity_id`) and sort them:
 
 ```r
 relevant_columns <- sort(c(1, 2, mean_columns, std_columns))
 ```
 
-We can then extract the 68 relevant columns.
+Sorting keeps the mean and standard deviation columns 
+of one measurement next to each other, which is nice when inspecting the
+data set. We can then extract the 68 relevant columns.
 
 ```r
 relevant_data <- complete_data[, relevant_columns]
