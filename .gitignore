@@ -5,3 +5,6 @@ data/test/**
 data/train/**
 README.html
 **.Rproj
+CodeBook.html
+playground.R
+code_helper.txt
