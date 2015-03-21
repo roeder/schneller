@@ -16,6 +16,13 @@ The 66 extracted variables are the ones whose names contain either `mean()`
 or `std()` in the original data set, i.e. variables containing mean and standard deviation values of the
 corresponding measured signals within an interval of 2.56 seconds. 
 
+Variable names
+have been slightly cleaned up compared to the original data set: parentheses have been removed
+and hyphens replaced with underscores. The original signal names (`tBodyAcc`, `tGravityAcc`, ...)
+have been retained. All in all, this means that the variable`tBodyAcc_mean_X` in the 
+tidy data set contains aggregated values of the original variable `tBodyAcc-mean()-X`. 
+This applies to all measurement variable names.
+
 ### Identifying variables
 
 * `subject_id`
