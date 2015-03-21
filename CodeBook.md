@@ -32,7 +32,7 @@ There were 30 test subjects performing six activities.
 All variables contain numeric values representing the aggregated mean for each
 test subject and activity.
 
-###### tBodyAcc 
+##### tBodyAcc 
 
 * `tBodyAcc_mean_X`
 * `tBodyAcc_mean_Y`
@@ -41,7 +41,7 @@ test subject and activity.
 * `tBodyAcc_std_Y`
 * `tBodyAcc_std_Z`
 
-###### tGravityAcc 
+##### tGravityAcc 
 
 * `tGravityAcc_mean_X`
 * `tGravityAcc_mean_Y`
@@ -50,7 +50,7 @@ test subject and activity.
 * `tGravityAcc_std_Y`
 * `tGravityAcc_std_Z`
 
-###### tBodyAccJerk 
+##### tBodyAccJerk 
 
 * `tBodyAccJerk_mean_X`
 * `tBodyAccJerk_mean_Y`
@@ -59,7 +59,7 @@ test subject and activity.
 * `tBodyAccJerk_std_Y`
 * `tBodyAccJerk_std_Z`
 
-###### tBodyGyro 
+##### tBodyGyro 
 
 * `tBodyGyro_mean_X`
 * `tBodyGyro_mean_Y`
@@ -68,7 +68,7 @@ test subject and activity.
 * `tBodyGyro_std_Y`
 * `tBodyGyro_std_Z`
 
-###### tBodyGyroJerk 
+##### tBodyGyroJerk 
 
 * `tBodyGyroJerk_mean_X`
 * `tBodyGyroJerk_mean_Y`
@@ -77,32 +77,32 @@ test subject and activity.
 * `tBodyGyroJerk_std_Y`
 * `tBodyGyroJerk_std_Z`
 
-###### tBodyAccMag 
+##### tBodyAccMag 
 
 * `tBodyAccMag_mean`
 * `tBodyAccMag_std`
 
-###### tGravityAccMag 
+##### tGravityAccMag 
 
 * `tGravityAccMag_mean`
 * `tGravityAccMag_std`
 
-###### tBodyAccJerkMag 
+##### tBodyAccJerkMag 
 
 * `tBodyAccJerkMag_mean`
 * `tBodyAccJerkMag_std`
 
-###### tBodyGyroMag 
+##### tBodyGyroMag 
 
 * `tBodyGyroMag_mean`
 * `tBodyGyroMag_std`
 
-###### tBodyGyroJerkMag 
+##### tBodyGyroJerkMag 
 
 * `tBodyGyroJerkMag_mean`
 * `tBodyGyroJerkMag_std`
 
-###### fBodyAcc 
+##### fBodyAcc 
 
 * `fBodyAcc_mean_X`
 * `fBodyAcc_mean_Y`
@@ -111,7 +111,7 @@ test subject and activity.
 * `fBodyAcc_std_Y`
 * `fBodyAcc_std_Z`
 
-###### fBodyAccJerk 
+##### fBodyAccJerk 
 
 * `fBodyAccJerk_mean_X`
 * `fBodyAccJerk_mean_Y`
@@ -120,7 +120,7 @@ test subject and activity.
 * `fBodyAccJerk_std_Y`
 * `fBodyAccJerk_std_Z`
 
-###### fBodyGyro 
+##### fBodyGyro 
 
 * `fBodyGyro_mean_X`
 * `fBodyGyro_mean_Y`
@@ -129,22 +129,22 @@ test subject and activity.
 * `fBodyGyro_std_Y`
 * `fBodyGyro_std_Z`
 
-###### fBodyAccMag 
+##### fBodyAccMag 
 
 * `fBodyAccMag_mean`
 * `fBodyAccMag_std`
 
-###### fBodyBodyAccJerkMag 
+##### fBodyBodyAccJerkMag 
 
 * `fBodyBodyAccJerkMag_mean`
 * `fBodyBodyAccJerkMag_std`
 
-###### fBodyBodyGyroMag 
+##### fBodyBodyGyroMag 
 
 * `fBodyBodyGyroMag_mean`
 * `fBodyBodyGyroMag_std`
 
-###### fBodyBodyGyroJerkMag 
+##### fBodyBodyGyroJerkMag 
 
 * `fBodyBodyGyroJerkMag_mean`
 * `fBodyBodyGyroJerkMag_std`
