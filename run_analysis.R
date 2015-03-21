@@ -31,6 +31,10 @@ activity_labels <- read.table('data/activity_labels.txt', stringsAsFactors = F,
                               col.names = c('activity_id', 'activity'))
 relevant_data <- merge(relevant_data, activity_labels)[, -1]
 
+# Variable names
+names(relevant_data) <- gsub('()', '', names(relevant_data), fixed = T)
+names(relevant_data) <- gsub('-', '_', names(relevant_data), fixed = T)
+
 # Aggregate by activity and subject
 report_data <- aggregate(. ~ subject_id + activity, data = relevant_data, 
                          FUN = mean)
