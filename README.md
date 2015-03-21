@@ -1,3 +1,9 @@
+The provided tidy data set can be read into R using `read.table()` with `header = T`:
+
+```r
+d <- read.table('tidy_wide.txt', header = T)
+```
+
 ## 1. Reading in and merging data
 
 The data set for this course project was downloaded 
