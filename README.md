@@ -1,3 +1,5 @@
+## Info: provided tidy data
+
 The provided tidy data set can be read into R using `read.table()` with `header = T`:
 
 ```r
